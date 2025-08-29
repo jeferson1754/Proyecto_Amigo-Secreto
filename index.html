@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Apretar un checkbox para desaparecer un div</title>
+  </head>
+  <body>
+    <div id="miDiv">
+      Este div se va a desaparecer cuando pulses el checkbox
+    </div>
+    <input type="checkbox" id="miCheckbox" onclick="apretarCheckbox()" />
+    <script>
+      function apretarCheckbox(){
+        if(document.getElementById('miCheckbox').checked){
+          document.getElementById('miDiv').style.visibility = 'hidden';
+        }
+        else{
+          document.getElementById('miDiv').style.visibility = 'visible';
+        }
+      }
+    </script>
+  </body>
+</html>
